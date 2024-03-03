@@ -1,1 +1,2 @@
-Salve, questo è la mia repository dove caricherò tutti i progetti in python pro idelalizzati insieme al mio gruppo!
+# GitKodland
+Salve, in questa repository verranno pubblicati tutti i miei progetti/programmi riguardo al mio gruppo kodland!
