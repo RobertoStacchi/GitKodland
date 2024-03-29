@@ -8,23 +8,15 @@ intents = discord.Intents.default()
 intents.message_content = True
 # crea un bot e passa gli indents
 client = discord.Client(intents=intents)
-
-async def on_ready():
-    print(f'Abbiamo fatto l\'accesso come {client.user}')
-
-
-
-client.run("import discord")
-
-# la variabile intents contiene i permessi al bot
-intents = discord.Intents.default()
-# abilita il permesso a leggere i contenuti dei messaggi
-intents.message_content = True
-# crea un bot e passa gli indents
-client = discord.Client(intents=intents)
+# descrizione del bot
+description = "Ciao! Questo è il primo bot di RobertoFonzies! Il bot in questione ti sarà di aiuto in certe circostanze di assistenza tecnica, come l'apertura dei ticket.\nSpero che ti piaccia il mio bot!"
 
 #Prefisso del bot e la sua struttura per eseguire delle istruzioni
 bot = commands.Bot(command_prefix='/', description=description, intents=intents)
+
+@client.event
+async def on_ready():
+    print(f'Abbiamo fatto l\'accesso come {client.user}')
 
 #Omaggiare l'entrata del membro
 @bot.command(name='ciao')

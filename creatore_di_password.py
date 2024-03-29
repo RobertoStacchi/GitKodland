@@ -1,4 +1,5 @@
 import random
+import time
 
 print("Questo è un generatore di password.")
 
